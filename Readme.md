@@ -9,6 +9,6 @@ python3 -m venv venv
 ## Build Docker Container
 
 ```bash
-docker build -t fed-edge-controller:0.1 .
-docker run edge-controller <BROKER_ADDRESS>
+docker build -t fed-edge-model-selector:0.1 .
+docker run fed-edge-model-selector <BROKER_ADDRESS>
 ```
