@@ -7,7 +7,7 @@ if(len(sys.argv) < 2):
 
 broker_address = sys.argv[1]
 source = "edge-controller"
-message_type = "edge-model"
+message_type = "edge-to-cloud-model"
 data = { "fed_model": "edge-model-file" }
 
 #broker_address = 'http://localhost:8080'
