@@ -1,0 +1,8 @@
+version: '3.5'
+
+services:
+  fed-edge-model-selector:
+    image: fed-edge-model-selector:0.1
+    container_name: fed-edge-model-selector
+    ports:
+      - 8080:8080
