@@ -20,7 +20,7 @@ class CloudEventService():
         headers, body = to_structured(event)
 
         requests.post(target_address, headers=headers, data=body)
-        print(f"Sent {event['id']} from {event['source']} with " f"{event.data}")
+        print(f"Sent {event['id']} from {event['source']} to {target_address} with " f"{event.data}")
 
     def receive_message(self, request):
         return from_http(request.headers, request.get_data())
